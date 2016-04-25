@@ -9,7 +9,15 @@
     <% String table = (String) request.getAttribute("table");%> 
     
     <body>
-        <h1>Customers Information</h1>
-        <%= table%>
+        <h1 id="readheader">Customers Information</h1>
+  
+            <div id="readtable">
+                <%= table%>
+            </div>
+                
+        <br><br>
+        
+        <a href ="add">Add A New Customer</a>
+        
     </body>
 </html>
