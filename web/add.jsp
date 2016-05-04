@@ -4,9 +4,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add a New Customer</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
     </head>
     <body>
-        <h1>Add a New Customer</h1>
+        <body>
+        <div class="wrap">
+
+            <%@ include file="includes/header.jsp" %>
+
+            <%@ include file="includes/menu.jsp" %>
+
+            <div class="main">
+        
+        
+        <h1 id="addheader">Add a New Customer</h1>
         
             <div id="addForm">
                     <form name="addForm" action="addCustomer" method="get">
@@ -55,6 +66,10 @@
 
                     </form> 
             </div>
-        
+      </div><!--close the main div-->
+
+            <%@ include file="includes/footer.jsp" %>
+
+        </div><!--close the wrap div-->    
     </body>
 </html>
